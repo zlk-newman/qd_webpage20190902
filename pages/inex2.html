@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery的使用</title>
+    <!--导入外部的jquery-->
+    <script type="text/javascript" src="../js/jQuery-1.12.4/jquery-1.12.4.js"></script>
+    <script type="text/javascript">
+        // jquery的直接执行的方法（dom ready方法中触发）
+        // $(document) 使用jquery获取到浏览器的dom对象，并执行 dom创建完成时的ready方法
+        $(document).ready(function(){
+            /// 此处的代码会在浏览器dom对象加载完成时执行
+            console.info("jquery执行");
+            });
+
+
+        // 上面语句有简写的方式
+        $(function () {
+            console.info("jquery执行简写的方式")
+        });
+
+    </script>
+</head>
+<body>
+<input type="text" id="txtname" name="txtname">
+<label id="lbl1"></label>
+<button value="click"></button>
+</body>
+</html>

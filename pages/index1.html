@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js脚本</title>
+    <!--引入外部的js文件-->
+    <script type="text/javascript" src="../js/js_index.js"></script>
+    <!--内部js-->
+    <script type="text/javascript">
+        //alert("弹出窗口");
+        console.info("浏览器控制台调试");
+
+        // 直接创建对象方式创建对象
+        // 使用Object创建一个对象的实例
+        var stu0 = new Object();
+        // 给对象附加属性和行为方法
+        stu0.stuName = "张三";
+        stu0.doStuding = function () {
+            console.info("I am si studing...")
+        }
+
+        // 调用对象的行为方法
+        stu0.doStuding();
+
+    </script>
+</head>
+<body>
+<!--内联的js-->
+<input type="button" value="clickMe" onclick="alert('这是按钮点击事件')">
+</body>
+</html>

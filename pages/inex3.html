@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery的使用</title>
+    <!--导入外部的jquery-->
+    <script type="text/javascript" src="../js/jQuery-1.12.4/jquery-1.12.4.js"></script>
+    <script type="text/javascript">
+        function clickMe1() {
+            // 使用dom方式获取对象
+            // 获取输入框对象控件
+            var txtN = document.getElementById("txtname");
+            // 取出控件的值
+            var txtNValue = txtN.value;
+            //alert(txtNValue);
+
+            // 把输入框中的值显示个label标签
+            // 获取label标签对象
+            var label1 = document.getElementById("lbl1");
+            // 给label标签赋值
+            label1.innerHTML = txtNValue;
+        }
+
+        // jquery进行dom操作
+        function clickMe2() {
+            // jquery选择器获取dom对象
+            var $txtN = $("#txtname");
+            // query的方法，不能使用dom方法
+            var txtNValue = $txtN.val();
+            //alert(txtNValue);
+            // 给label标签赋值
+            $("#lbl1").html(txtNValue);
+        }
+    </script>
+</head>
+<body>
+<input type="text" id="txtname" name="txtname">
+<label id="lbl1"></label>
+<br>
+<button id="showMe" value="showMe" onclick="clickMe1()">showMe</button>
+<button id="showMe2" value="showMe2" onclick="clickMe2()">showMe2</button>
+
+</body>
+</html>

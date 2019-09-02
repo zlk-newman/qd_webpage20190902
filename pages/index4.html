@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form表单</title>
+    <style rel="stylesheet">
+        #maindiv{
+            margin-top: 10px;
+            width: 90%;
+        }
+    </style>
+    <!--引入bootstrap的css文件-->
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="../plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--引入jquery，注意：jquery要在js文件之前引入，因为bootstrap使用了jquery框架-->
+    <script type="text/javascript" src="../js/jQuery-1.12.4/jquery-1.12.4.js"></script>
+    <!--引入bootstrap的js文件-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>-->
+    <script src="../plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="maindiv">
+    <form class="form-horizontal">
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">姓名</label>
+            <div class="col-sm-4">
+                <input type="email" class="form-control" id="userName" placeholder="请输入姓名">
+            </div>
+
+            <label class="col-sm-2 control-label">年龄</label>
+            <div class="col-sm-4">
+                <input type="email" class="form-control" id="userAge" placeholder="请输入年龄">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+            <div class="col-sm-4">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+            </div>
+
+            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+            <div class="col-sm-4">
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Sign in</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>
